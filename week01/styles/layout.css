@@ -1,0 +1,70 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px; /* Added margin-bottom to create space between header and content */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    background-color: #000;
+}
+
+.link-box {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.link-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Content Container */
+.container {
+    display: flex;
+}
+
+/* Main content */
+main {
+    flex: 1; /* Takes up remaining space */
+    margin-right: 20px; /* Added margin-right to create space between main and aside */
+}
+
+.main-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Aside content */
+aside {
+    width: 25%;
+}
+
+.aside-box {
+    background-color: #666;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
