@@ -47,18 +47,20 @@ main {
 }
 
 .main-box {
-    background-color: #f0f0f0;
+    background-color: #c4c0c0;
     padding: 20px;
 }
 
 /* Aside content */
 aside {
     width: 25%;
+
 }
 
 .aside-box {
-    background-color: #666;
+    background-color: #fffcfc;
     padding: 20px;
+    height: 50;
 }
 
 /* Footer */
