@@ -1,4 +1,64 @@
 <!DOCTYPE html>
-<header></header>
-<a></a>
-<footer></footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Whitten">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, my name is David Whitten. This is my web home page.">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Whitten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header style="background-color: #064d88; text-align: center;">
+        <h1 style="margin-bottom: 20px;">WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav style="background-color: #03253b; text-align: center; padding: 10px;">
+            <ul style="list-style-type: none; display: flex; justify-content: center;">
+                <li class="link-box">
+                    <a href="https://www.linkedin.com">LinkedIn</a>
+                </li>
+                <li class="link-box">
+                    <a href="https://byui.instructure.com/">I-Learn</a>
+                </li>
+                <li class="link-box">
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=eng">Scripture</a>
+                </li>
+                <li class="link-box">
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-grid">
+        <section class="left-card card">
+            <div class="card-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card-content">
+                <p>Welcome to my web page! I'm David Whitten, and this is my space on the internet. Here, you'll find information about me, my projects, and interests.</p>
+                <img src="path/to/your/image1.jpg" alt="Description of image 1" style="float: right; margin-left: 10px;">
+                <p>This is an image description for the first image.</p>
+                <img src="path/to/your/image3.jpg" alt="Description of image 3" style="clear: both; margin-top: 20px;">
+                <p style="text-align: center;">This is an image description below the first image.</p>
+            </div>
+        </section>
+        <section class="right-card card">
+            <div class="card-header">
+                <h2>Links</h2>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://www.example.com/resource4">Resource Link 4</a></li>
+                    <li><a href="https://www.example.com/resource5">Resource Link 5</a></li>
+                    <li><a href="https://www.example.com/resource6">Resource Link 6</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> David Whitten. Texas, United States.</p>
+        <p id="lastModified">Additional information or links if needed.</p>
+    </footer>
+</body>
+</html>
