@@ -9,4 +9,4 @@ document.querySelector('header').appendChild(hamburger);
 
 hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('show');
-});
+}); 
