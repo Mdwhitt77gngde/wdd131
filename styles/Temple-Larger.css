@@ -1,0 +1,58 @@
+/* CSS for larger view */
+
+/* Additional styles for larger view */
+header {
+    padding: 20px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 48px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.temple-gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.temple-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.temple-gallery img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.temple-gallery figcaption {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+}
