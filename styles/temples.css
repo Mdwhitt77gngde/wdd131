@@ -1,12 +1,8 @@
-
-
-/* Reset some default styles */
 body, h1, h2, nav, footer {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f3f3;
@@ -27,13 +23,18 @@ h1 {
 }
 
 nav {
-    display: none; /* Hide navigation menu by default */
+    display: none;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin-right: 10px;
+}
+
+nav a:hover {
+
+    color: lightgray;
 }
 
 main {
@@ -73,14 +74,13 @@ footer {
     padding: 10px;
 }
 
-/* Hamburger menu */
 @media (max-width: 768px) {
     nav {
-        display: block; /* Show navigation menu for mobile */
+        display: block;
     }
 
     nav.show {
-        display: block; /* Show navigation menu when toggled */
+        display: block;
     }
 
     main {
