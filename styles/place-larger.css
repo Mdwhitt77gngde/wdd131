@@ -1,0 +1,72 @@
+/* Larger screen styles */
+
+header {
+    padding: 1.5em;
+}
+
+.hero {
+    position: relative;
+    margin: 40px 0;
+}
+
+/* Remove padding for the image */
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.data-box, .weather {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 51, 160, 0.8); /* Semi-transparent blue */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--secondary-color); /* Red border */
+}
+
+.data-box {
+    bottom: 20px; /* Adjust the position */
+    left: 20px; /* Adjust the position */
+}
+
+.weather {
+    bottom: 0px; /* Adjust the position */
+    right: 0px; /* Adjust the position */
+}
+
+.data-box h2, .weather h2 {
+    background-color: var(--header-color);
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.data-box h2:hover, .weather h2:hover {
+    background-color: var(--hover-color);
+}
+
+.weather h2::after {
+    content: " ⛅";
+    display: inline;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.weather-icon-mobile {
+    display: none;
+}
+
+/* Ensure visibility of hero image under data and weather boxes */
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8; /* Slightly transparent to make overlapping boxes more visible */
+}
+
+footer {
+    padding: 1.5em;
+}

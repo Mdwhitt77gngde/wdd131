@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Whitten">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, my name is David Whitten.">
+    <meta name="keywords" content="web development, dynamic web, WDD 131, David Whitten">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Whitten</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>United States of America</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <img src="images/eagle.jpg" alt="Bald eagle">
+            </picture>
+        </section>
+        <section class="data-box">
+            <h2>Country Information</h2>
+            <p>Area: <span id="area">Unknown</span></p>
+            <p>Population: <span id="population">Unknown</span></p>
+            <p>Capital: <span id="capital">Unknown</span></p>
+            <p>Languages: <span id="languages">Unknown</span></p>
+            <p>Currency: <span id="currency">Unknown</span></p>
+            <p>Time Zone: <span id="timeZone">Unknown</span></p>
+            <p>Calling Code: <span id="callingCode">Unknown</span></p>
+            <p>Internet TLD: <span id="internetTLD">Unknown</span></p>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <img src="images/weather-icon.svg" class="weather-icon-mobile" alt="Weather Icon">
+            <p>Temperature: <span id="temperature">5°C</span></p>
+            <p>Wind Speed: <span id="windSpeed">10 km/h</span></p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> David Whitten. Texas, United States</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

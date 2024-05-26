@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #0033A0; /* Blue from the American flag */
+    --secondary-color: #BF0A30; /* Red from the American flag */
+    --header-color: #002147; /* Darker blue for headers */
+    --hover-color: #A81C24; /* Darker red for hover effects */
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.data-box, .weather {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 51, 160, 0.8); /* Semi-transparent blue */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    border: 2px solid var(--secondary-color); /* Red border */
+}
+
+.data-box h2, .weather h2 {
+    background-color: var(--header-color);
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.data-box h2:hover, .weather h2:hover {
+    background-color: var(--hover-color);
+}
+
+.weather h2::after {
+    content: "";
+}
+
+.weather-icon-mobile {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Mobile view: Column layout */
+@media (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data-box, .weather {
+        width: 90%;
+        max-width: 600px;
+        margin: 10px 0;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
