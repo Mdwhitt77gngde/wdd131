@@ -7,6 +7,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, my name is David Whitten.">
     <meta name="keywords" content="web development, dynamic web, WDD 131, David Whitten">
     <title>WDD 131 - Dynamic Web Fundamentals - David Whitten</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-larger.css">
@@ -14,11 +15,13 @@
 </head>
 <body>
     <header>
-        <h1>United States of America</h1>
+        <h1>Place Page</h1>
     </header>
     <main>
         <section class="hero">
             <picture>
+                <source srcset="images/eagle.jpg" media="(min-width: 1024px)">
+                <source srcset="images/eagle.jpg" media="(min-width: 768px)">
                 <img src="images/eagle.jpg" alt="Bald eagle">
             </picture>
         </section>
