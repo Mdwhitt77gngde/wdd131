@@ -1,0 +1,100 @@
+/* Stylesheet for mobile view */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e; /* Dark background color */
+    color: #f0e68c; /* Warm text color */
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #444444; /* Dark header color */
+    color: #f0e68c; /* Warm text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .site-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f0e68c; /* Warm text color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Warm accent color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ffa500; /* Warm accent color */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* User profile section styles */
+.user-profile {
+    background-color: #383838; /* Slightly lighter dark color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #f0e68c; /* Warm text color */
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.user-bio {
+    background-color: #444444; /* Dark background color */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-bio p {
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #444444; /* Dark footer color */
+    color: #f0e68c; /* Warm text color */
+    padding: 10px 20px;
+    text-align: center;
+}
