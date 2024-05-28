@@ -1,34 +1,55 @@
 /* Stylesheet for Finance Social project */
 
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2e2e2e; /* Dark background color */
+    color: #f0e68c; /* Warm text color */
 }
 
+/* Header and navigation styles */
 header {
-    background-color: #0066CC;
-    color: #fff;
-    padding: 20px;
+    background-color: #444444; /* Dark header color */
+    color: #f0e68c; /* Warm text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .site-name {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f0e68c; /* Warm text color */
     text-decoration: none;
+    font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #ffa500; /* Warm accent color on hover */
+}
+
+/* Main content styles */
 main {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -37,23 +58,69 @@ section {
 }
 
 h2 {
-    color: #0066CC;
+    color: #ffa500; /* Warm accent color */
 }
 
 p {
     line-height: 1.6;
 }
 
-/* Add more styles as needed */
-
-/* New styles for site plan content */
-#site-plan-content {
-    border: 1px solid #ccc;
+/* User profile section styles */
+.user-profile {
+    background-color: #383838; /* Slightly lighter dark color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    background-color: #f9f9f9;
+    width: 250px;
+    text-align: center;
+    color: #f0e68c; /* Warm text color */
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.user-bio {
+    background-color: #444444; /* Dark background color */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-bio p {
+    margin: 0;
+}
+
+/* Main content section styles */
+#content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#site-plan-content {
+    background-color: #383838; /* Slightly lighter dark color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
     margin-top: 20px;
+    color: #f0e68c; /* Warm text color */
 }
 
 #site-plan-content h3 {
-    color: #0066CC;
+    color: #ffa500; /* Warm accent color */
+}
+
+/* Hidden sections styles */
+.hidden-sections {
+    display: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #444444; /* Dark footer color */
+    color: #f0e68c; /* Warm text color */
+    padding: 10px 20px;
+    text-align: center;
 }

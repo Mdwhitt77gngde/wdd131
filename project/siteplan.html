@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Social</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FinSol</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals this is my site project Page">
+    <meta name="author" content="David Whitten">
+    <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
     <header>
-        <h1>Finance Social</h1>
+        <div class="site-name">Fin Sol</div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#community">Community</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,38 +21,50 @@
         </nav>
     </header>
     <main>
-        <section id="home">
-            <h2>User Home Page</h2>
-            <!-- Personal finance tracker content -->
-            <p>Welcome to Finance Social! Here, you can track your personal finances, view recent blog posts, and interact with other users.</p>
-        </section>
-        <section id="community">
-            <h2>Community Page</h2>
-            <!-- Community features content -->
-            <p>Join discussions, share insights, and connect with fellow users who share your interest in personal finance management.</p>
-        </section>
-        <!-- Include content from the site plan -->
-        <section id="site-plan-content">
-            <h2>Site Plan</h2>
-            <h3>Site Name: Finance Social</h3>
-            <p>Finance Social is a platform that combines personal finance tracking with social media features, providing users with tools to manage their finances effectively while connecting with a community of like-minded individuals.</p>
-            <h3>Site Purpose</h3>
-            <p>The site serves as a hub for users to track their personal finances, share financial tips, and engage in discussions about financial topics.</p>
-            <h3>Scenarios</h3>
-            <ul>
-                <li>How can I track my expenses efficiently?</li>
-                <li>Where can I find tips on saving money?</li>
-            </ul>
-            <h3>Color Schema</h3>
-            <p>Main color: #0066CC (used for headings, buttons)</p>
-            <p>Secondary color: #66CC00 (used for backgrounds, accents)</p>
-            <h3>Typography</h3>
-            <p>Main font: Arial (used for body text)</p>
-            <p>Secondary font: Helvetica (used for headings)</p>
-            <h3>Wireframes</h3>
-            <p>Include wireframe sketches for mobile and desktop views here.</p>
-        </section>
+        <div id="content">
+            <section id="home">
+                <h2>User Home Page</h2>
+                <p>Welcome to Finance Social! Here, you can track your personal finances, view recent blog posts, and interact with other users.</p>
+            </section>
+            <section id="community">
+                <h2>Community Page</h2>
+                <p>Join discussions, share insights, and connect with fellow users who share your interest in personal finance management.</p>
+            </section>
+            <section id="site-plan-content">
+                <h2>Site Plan</h2>
+                <h3>Site Name: Finance Social</h3>
+                <p>Finance Social is a platform that combines personal finance tracking with social media features, providing users with tools to manage their finances effectively while connecting with a community of like-minded individuals.</p>
+                <h3>Site Purpose</h3>
+                <p>The site serves as a hub for users to track their personal finances, share financial tips, and engage in discussions about financial topics.</p>
+                <h3>Scenarios</h3>
+                <ul id="scenarios">
+                    <!-- Scenarios will be dynamically added here -->
+                </ul>
+                <div class="hidden-sections">
+                    <h3>Color Schema</h3>
+                    <p>Main color: #0066CC (used for headings, buttons)</p>
+                    <p>Secondary color: #66CC00 (used for backgrounds, accents)</p>
+                    <h3>Typography</h3>
+                    <p>Main font: Arial (used for body text)</p>
+                    <p>Secondary font: Helvetica (used for headings)</p>
+                    <h3>Wireframes</h3>
+                    <p>Include wireframe sketches for mobile and desktop views here.</p>
+                </div>
+            </section>
+        </div>
+        <aside class="user-profile">
+            <h3>User Profile</h3>
+            <img src="user.jpg" alt="User Photo" class="user-photo">
+            <div class="user-bio">
+                <p><strong>Name:</strong> David Whitten</p>
+                <p><strong>Bio:</strong> This would be my profile page, this would be an example of what others page would look like.</p>
+            </div>
+        </aside>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy;<span id="copyright"></span> David Whitten</p>
+        <p id="last-updated"></p>
+    </footer>
+    <script src="scripts/siteplan.js"></script>
 </body>
 </html>

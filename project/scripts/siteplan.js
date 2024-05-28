@@ -23,4 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
         listItem.textContent = scenario;
         scenariosList.appendChild(listItem);
     });
+
+    // Set the last updated date and time
+    var lastUpdated = new Date(document.lastModified);
+    document.getElementById("last-updated").textContent = "Last updated: " + lastUpdated.toLocaleString();
 });
