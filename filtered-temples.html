@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals this is my filtered temple album page">
+    <meta name="author" content="David Whitten">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-larger.css">
+</head>
+<body>
+    <header>
+        <h1>Temples Album</h1>
+        <button class="hamburger">&#9776;</button>
+        <nav>
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Selected Temples</h2>
+        <section id="temple-gallery" class="temple-gallery">
+            <h3>Temple Gallery</h3>
+            <!-- Temple cards will be dynamically generated here -->
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="copyright"></span>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>

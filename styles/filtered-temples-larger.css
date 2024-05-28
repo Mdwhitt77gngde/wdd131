@@ -1,3 +1,4 @@
+/* Media queries for larger screens */
 @media (min-width: 769px) {
     header {
         padding: 20px;
@@ -40,7 +41,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .temple-gallery figure {
+    .temple-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,13 +50,14 @@
         padding: 20px;
     }
 
-    .temple-gallery img {
+    .temple-card img {
         width: 100%;
         max-width: 100%;
         border-radius: 8px;
+        display: block;
     }
 
-    .temple-gallery figcaption {
+    .temple-card figcaption {
         margin-top: 20px;
         text-align: center;
     }
