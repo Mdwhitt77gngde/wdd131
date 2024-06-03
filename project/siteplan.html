@@ -3,73 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinSol</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals this is my site project Page">
+    <title>Home - FinSol</title>
+    <meta name="description" content="Welcome to FinSol, your go-to source for financial solutions and advice.">
     <meta name="author" content="David Whitten">
     <link rel="stylesheet" href="styles/siteplan.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="styles/siteplanmob.css" media="screen and (max-width: 599px)">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="site-name">Fin Sol</div>
+        <div class="site-name">FinSol</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#community">Community</a></li>
+                <li><a href="siteplan.html" class="active">Home</a></li>
+                <li><a href="community.html">Community</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Newsletter</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="content">
-            <section id="home">
-                <h2>User Home Page</h2>
-                <p>Welcome to Finance Social! Here, you can track your personal finances, view recent blog posts, and interact with other users.</p>
-            </section>
-            <section id="community">
-                <h2>Community Page</h2>
-                <p>Join discussions, share insights, and connect with fellow users who share your interest in personal finance management.</p>
-            </section>
-            <section id="site-plan-content">
-                <h2>Site Plan</h2>
-                <h3>Site Name: Finance Social</h3>
-                <p>Finance Social is a platform that combines personal finance tracking with social media features, providing users with tools to manage their finances effectively while connecting with a community of like-minded individuals.</p>
-                <h3>Site Purpose</h3>
-                <p>The site serves as a hub for users to track their personal finances, share financial tips, and engage in discussions about financial topics.</p>
-                <h3>Scenarios</h3>
-                <ul id="scenarios">
-                    <li>Scenario 1: How can users track their monthly expenses?</li>
-                    <li>Scenario 2: How can users share their financial tips with the community?</li>
-                </ul>
-                <div class="hidden-sections">
-                    <h3>Color Schema</h3>
-                    <p>Main color: #2c3e50 (Dark Slate Gray)</p>
-                    <p>Secondary color: #34495e (Dark Blue-Gray)</p>
-                    <p>Accent color: #e74c3c (Warm Red)</p>
-                    <p>Link color: #e67e22 (Warm Orange)</p>
-                    <p>Hover link color: #d35400 (Dark Orange)</p>
-                    <h3>Typography</h3>
-                    <p>Main font: Arial (used for body text)</p>
-                    <p>Secondary font: Helvetica (used for headings)</p>
-                    <h3>Wireframes</h3>
-                    <p>Include wireframe sketches for mobile and desktop views here.</p>
-                </div>
-            </section>
-        </div>
-        <aside class="user-profile">
-            <h3>User Profile</h3>
-            <img src="images/user1.jpeg" alt="User Photo" class="user-photo">
-            <div class="user-bio">
-                <p><strong>Name:</strong> David Whitten</p>
-                <p><strong>Bio:</strong> This would be my profile page, this would be an example of what others page would look like.</p>
-            </div>
-        </aside>
+        <section>
+            <h2>Welcome to FinSol</h2>
+            <p>Your go-to source for financial solutions and advice.</p>
+            <p>At FinSol, we understand that managing finances can be challenging. Our goal is to provide you with the knowledge and tools you need to make informed financial decisions.</p>
+            <h3>Why Choose FinSol?</h3>
+            <ul>
+                <li>Expert advice from experienced financial advisors.</li>
+                <li>Comprehensive resources and tools.</li>
+                <li>Community support and engagement.</li>
+                <li>Personalized financial plans and strategies.</li>
+            </ul>
+            <h3>Our Services</h3>
+            <p>We offer a variety of services to help you achieve your financial goals:</p>
+            <ul>
+                <li><strong>Financial Planning:</strong> Customized plans to suit your unique needs.</li>
+                <li><strong>Investment Advice:</strong> Strategies to help you grow your wealth.</li>
+                <li><strong>Retirement Planning:</strong> Ensure a secure and comfortable retirement.</li>
+                <li><strong>Debt Management:</strong> Effective strategies to manage and reduce debt.</li>
+            </ul>
+            <button id="dynamic-content-button">Click for a financial tip</button>
+            <p id="dynamic-content"></p>
+        </section>
     </main>
     <footer>
-        <p>&copy;<span id="copyright"></span> David Whitten</p>
-        <p id="last-updated"></p>
+        <p>&copy; 2024 FinSol. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
     </footer>
-    <script src="scripts/siteplan.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup - FinSol</title>
+    <meta name="description" content="Sign up for the FinSol newsletter for the latest financial tips and news.">
+    <meta name="author" content="David Whitten">
+    <link rel="stylesheet" href="styles/siteplan.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="styles/siteplanmob.css" media="screen and (max-width: 599px)">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-name">FinSol</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html" class="active">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sign Up for Our Newsletter</h2>
+            <form id="infoForm" action="submit_newsletter.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="interests">Interests:</label>
+                <select id="interests" name="interests">
+                    <option value="budgeting">Budgeting</option>
+                    <option value="saving">Saving</option>
+                    <option value="investing">Investing</option>
+                </select>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FinSol. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

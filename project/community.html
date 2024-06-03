@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - FinSol</title>
+    <meta name="description" content="Join the FinSol community and engage in discussions about finance.">
+    <meta name="author" content="David Whitten">
+    <link rel="stylesheet" href="styles/siteplan.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="styles/siteplanmob.css" media="screen and (max-width: 599px)">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="site-name">FinSol</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Community Forums</h2>
+            <div class="forum-category">
+                <h3>Budgeting</h3>
+                <div class="thread">
+                    <h4>How to create a budget effectively?</h4>
+                    <p>What are some tips for creating and sticking to a budget?</p>
+                </div>
+                <div class="thread">
+                    <h4>What percentage of income should be allocated to savings?</h4>
+                    <p>Discuss recommended savings rates and strategies.</p>
+                </div>
+            </div>
+            <div class="forum-category">
+                <h3>Saving</h3>
+                <div class="thread">
+                    <h4>Best strategies for saving money?</h4>
+                    <p>Share your favorite money-saving tips and tricks!</p>
+                </div>
+            </div>
+            <h3>Create New Thread</h3>
+            <form id="new-thread-form" action="submit_thread.php" method="post">
+                <label for="thread-title">Thread Title:</label>
+                <input type="text" id="thread-title" name="thread-title" required>
+                <label for="thread-content">Thread Content:</label>
+                <textarea id="thread-content" name="thread-content" rows="4" required></textarea>
+                <button type="submit">Create Thread</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FinSol. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
