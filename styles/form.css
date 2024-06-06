@@ -25,7 +25,7 @@ main {
 
 h1 {
     margin-top: 0;
-    color: #1a1a1a;  /* Darker text for better contrast */
+    color: #dbcfcf;  /* Darker text for better contrast */
 }
 
 .form-group {
@@ -68,7 +68,7 @@ input[type="submit"]:hover {
 
 .rating label {
     font-size: 2em;
-    color: #aaaaaa;  /* Lighter color for unchecked stars */
+    color: #070707;  /* Lighter color for unchecked stars */
     cursor: pointer;
 }
 
